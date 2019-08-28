@@ -1,0 +1,10 @@
+config:
+  target: 'https://chimeratest.herokuapp.com/'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+  defaults:
+scenarios:
+  - flow:
+    - get:
+        url: "/user"
